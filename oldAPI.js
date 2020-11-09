@@ -1,11 +1,3 @@
-import React from 'react';
-// import logo from './logo.svg';
-import './App.css';
-import List from './List';
-import Comics from './Comics';
-
-
-
 const comic_info = {
   "code": 200,
   "status": "Ok",
@@ -185,15 +177,3 @@ const comic_info = {
     ]
   }
 }
-
-function App() {
-
-
-
-  	return (
-        // {/* <List result = {comic_info.data.results}/> */}
-        <List result = {Comics().data.results} />
-  );
-}
-
-export default App;
