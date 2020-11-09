@@ -1,10 +1,24 @@
 import React from 'react';
-import Listitem from './ListItem';
+import ListItem from './ListItem';
 
 const List = (props) => {
 
+
+    console.log(props.result[0])
+
     return (
-        <Listitem comic_info = {props.result[0]}/>
+        <React.Fragment>
+            {props.result.map((comic, id) => {
+                return (
+                    <ListItem key =  {id} comic_info = {comic}  />
+                
+                )
+            
+            })}
+        
+        </React.Fragment>
+
+        
 
     )
 }
